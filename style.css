@@ -562,3 +562,90 @@ footer p {
     }
 
 }
+
+/* Books page layout corrections */
+
+header > .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+header .tagline {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #46665b;
+    margin-top: 8px;
+}
+
+main.book-library {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 35px 30px;
+    box-sizing: border-box;
+}
+
+.book-library .library-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.book-library .library-book {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #d6d8cf;
+}
+
+.book-library img.library-cover {
+    display: block;
+    width: 35%;
+    max-width: 160px;
+    height: auto;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+.book-library .library-details {
+    flex: 1;
+    min-width: 0;
+}
+
+.book-library .prism-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.book-library .prism-volume img {
+    display: block;
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    margin: 0 auto 15px;
+}
+
+@media (max-width: 800px) {
+
+    .book-library .library-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .book-library .prism-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    main.book-library {
+        padding: 25px 20px;
+    }
+
+    header > .container {
+        padding: 20px;
+    }
+}

@@ -352,3 +352,213 @@ footer p {
     height: 100%;
     object-fit: cover;
 }
+
+/* =========================================
+   BOOK LIBRARY
+   ========================================= */
+
+.book-library {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 35px 30px;
+}
+
+.library-intro {
+    padding-bottom: 25px;
+}
+
+.library-subtitle {
+    font-family: Georgia, serif;
+    font-style: italic;
+    color: #46665b;
+    font-size: 1.15rem;
+}
+
+.library-section {
+    padding: 30px 0;
+    border-top: 1px solid #d6d8cf;
+}
+
+.library-section h2 {
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+.library-section h3 {
+    color: #243f4d;
+    font-family: Georgia, serif;
+    margin-top: 0;
+}
+
+
+/* Standard book displays */
+
+.library-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+    margin-top: 25px;
+}
+
+.library-book {
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+    background: #ffffff;
+    border: 1px solid #d6d8cf;
+    padding: 22px;
+}
+
+.library-cover {
+    display: block;
+    width: 36%;
+    max-width: 180px;
+    height: auto;
+    flex-shrink: 0;
+    box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.13);
+}
+
+.library-details {
+    flex: 1;
+    min-width: 0;
+}
+
+.library-details h3 {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+}
+
+.library-details p {
+    font-size: 0.95rem;
+    line-height: 1.65;
+}
+
+.library-single {
+    max-width: 800px;
+}
+
+
+/* Through the Prism collection */
+
+.prism-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 28px;
+}
+
+.prism-volume {
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #d6d8cf;
+    padding: 18px;
+}
+
+.prism-volume img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 3;
+    object-fit: contain;
+    margin: 0 auto 18px;
+}
+
+.prism-volume h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.prism-volume p {
+    font-size: 0.9rem;
+    color: #46665b;
+    margin: 5px 0;
+}
+
+
+/* Recovery gift copies */
+
+.library-note {
+    background: #eaece4;
+    border-left: 4px solid #46665b;
+    padding: 25px;
+}
+
+
+/* Future book links and buttons */
+
+.library-button {
+    display: inline-block;
+    background: #243f4d;
+    color: #ffffff;
+    padding: 9px 16px;
+    margin: 6px 6px 6px 0;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.library-button:hover {
+    background: #46665b;
+}
+
+.library-button-outline {
+    display: inline-block;
+    border: 1px solid #46665b;
+    color: #46665b;
+    padding: 9px 16px;
+    margin: 6px 6px 6px 0;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.library-button-outline:hover {
+    background: #eaece4;
+}
+
+
+/* Tablets and smaller screens */
+
+@media (max-width: 900px) {
+
+    .library-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .prism-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* Mobile phones */
+
+@media (max-width: 500px) {
+
+    .book-library {
+        padding: 25px 16px;
+    }
+
+    .library-book {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .library-cover {
+        width: 35%;
+    }
+
+    .library-details h3 {
+        font-size: 1.1rem;
+    }
+
+    .prism-grid {
+        gap: 12px;
+    }
+
+    .prism-volume {
+        padding: 12px;
+    }
+
+}

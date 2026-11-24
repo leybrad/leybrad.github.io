@@ -888,3 +888,109 @@ main.book-page {
     }
 
 }
+
+/* =========================================
+   ART AND PHOTOGRAPHY GALLERIES
+   ========================================= */
+
+.artwork-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    margin: 30px 0;
+    align-items: start;
+}
+
+.artwork-card {
+    background: #ffffff;
+    border: 1px solid #dedfd7;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.artwork-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.artwork-card a {
+    text-decoration: none;
+}
+
+.artwork-card img:hover {
+    opacity: 0.92;
+}
+
+.artwork-details {
+    padding: 20px;
+}
+
+.artwork-details h3 {
+    color: #243f4d;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.artwork-details p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 8px 0;
+}
+
+.artwork-caption {
+    color: #46665b;
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+
+/* Individual artwork pages */
+
+.artwork-feature {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.artwork-feature img {
+    display: block;
+    max-width: 100%;
+    max-height: 850px;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: 4px 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.artwork-feature figcaption {
+    color: #46665b;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+
+/* Tablet layout */
+
+@media (max-width: 900px) {
+
+    .artwork-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* Mobile layout */
+
+@media (max-width: 600px) {
+
+    .artwork-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .artwork-details {
+        padding: 18px;
+    }
+
+}

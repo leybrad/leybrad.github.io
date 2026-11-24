@@ -135,19 +135,20 @@ main {
 }
 
 .portrait {
-    min-height: 300px;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
     background: var(--light);
     border: 1px solid var(--border);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--accent);
 }
 
 .portrait img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
 }
 
 .welcome-text p {

@@ -600,3 +600,152 @@ footer a:hover {
 /* =========================================
    END OF MAIN STYLESHEET
    ========================================= */
+
+
+/* =========================================
+   INDIVIDUAL BOOK PAGES
+   ========================================= */
+
+main.book-page {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 35px 30px;
+}
+
+.back-link {
+    font-size: 0.9rem;
+    margin: 0 0 25px;
+}
+
+.back-link a {
+    text-decoration: none;
+    color: var(--accent);
+}
+
+.back-link a:hover {
+    text-decoration: underline;
+}
+
+
+/* Main book presentation */
+
+.book-hero {
+    display: grid;
+    grid-template-columns: 300px minmax(0, 1fr);
+    gap: 45px;
+    align-items: start;
+    padding-bottom: 40px;
+}
+
+.book-hero-cover img {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-shadow: 4px 6px 14px rgba(0, 0, 0, 0.18);
+}
+
+.book-hero-details h2 {
+    font-size: 38px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.book-hero-details p {
+    margin: 15px 0;
+}
+
+.book-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 25px;
+}
+
+
+/* Individual book content */
+
+.book-page .library-section {
+    padding: 35px 0;
+    scroll-margin-top: 20px;
+}
+
+.book-page .library-section > p {
+    max-width: 900px;
+}
+
+.book-page .library-note {
+    padding: 25px 30px;
+}
+
+
+/* Clickable book covers and titles */
+
+.book-cover-link {
+    display: block;
+    width: 35%;
+    max-width: 160px;
+    flex-shrink: 0;
+}
+
+.book-cover-link img.library-cover {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.book-title-link {
+    color: var(--heading);
+    text-decoration: none;
+}
+
+.book-title-link:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+
+/* Tablets */
+
+@media (max-width: 850px) {
+
+    .book-hero {
+        grid-template-columns: 220px minmax(0, 1fr);
+        gap: 30px;
+    }
+
+    .book-hero-details h2 {
+        font-size: 32px;
+    }
+
+}
+
+
+/* Mobile phones */
+
+@media (max-width: 600px) {
+
+    main.book-page {
+        padding: 25px 20px;
+    }
+
+    .book-hero {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .book-hero-cover {
+        max-width: 250px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .book-hero-details h2 {
+        font-size: 30px;
+    }
+
+    .book-page .library-note {
+        padding: 20px;
+    }
+
+}

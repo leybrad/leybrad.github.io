@@ -1,1 +1,0 @@
-images/personal/README.md

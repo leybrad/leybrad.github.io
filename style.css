@@ -994,3 +994,186 @@ main.book-page {
     }
 
 }
+
+/* =========================================
+   HOMEPAGE FEATURED CONTENT
+   ========================================= */
+
+.featured-list {
+    margin-top: 30px;
+}
+
+.featured-item {
+    display: grid;
+    grid-template-columns: 150px minmax(0, 1fr);
+    gap: 30px;
+    align-items: start;
+    padding: 28px 0;
+    border-bottom: 1px solid #dedfd7;
+}
+
+.featured-item:last-child {
+    border-bottom: none;
+}
+
+.featured-image {
+    display: block;
+    text-decoration: none;
+}
+
+.featured-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.12);
+    transition: opacity 0.2s ease;
+}
+
+.featured-image:hover img {
+    opacity: 0.85;
+}
+
+.featured-label {
+    color: #46665b;
+    font-size: 0.78rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.featured-details h3 {
+    color: #243f4d;
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.featured-details p {
+    line-height: 1.65;
+}
+
+.featured-details .library-button-outline {
+    display: inline-block;
+    margin: 10px 8px 0 0;
+}
+
+
+/* =========================================
+   HOMEPAGE BOOKSHELF
+   ========================================= */
+
+.homepage-book-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 24px;
+    margin: 35px 0;
+    align-items: start;
+}
+
+.homepage-book {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #243f4d;
+}
+
+.homepage-book img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: contain;
+    margin: 0 auto 15px;
+    transition: transform 0.2s ease;
+}
+
+.homepage-book:hover img {
+    transform: translateY(-4px);
+}
+
+.homepage-book h3 {
+    color: #243f4d;
+    font-size: 1rem;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.homepage-book:hover h3 {
+    color: #46665b;
+}
+
+
+/* =========================================
+   HOMEPAGE CLOSING REFLECTION
+   ========================================= */
+
+.homepage-closing {
+    text-align: center;
+    padding: 45px 20px;
+    margin: 30px 0;
+    border-top: 1px solid #dedfd7;
+}
+
+.homepage-closing h2 {
+    color: #243f4d;
+    margin-bottom: 25px;
+}
+
+.homepage-closing blockquote {
+    font-family: Georgia, serif;
+    color: #46665b;
+    font-size: 1.3rem;
+    font-style: italic;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 15px;
+    border: none;
+    background: transparent;
+}
+
+
+/* =========================================
+   RESPONSIVE HOMEPAGE
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .homepage-book-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .featured-item {
+        grid-template-columns: 130px minmax(0, 1fr);
+        gap: 22px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .homepage-book-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .featured-item {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .featured-image {
+        max-width: 150px;
+        margin: 0 auto;
+    }
+
+    .featured-details h3 {
+        font-size: 1.3rem;
+    }
+
+    .homepage-closing blockquote {
+        font-size: 1.1rem;
+    }
+
+}

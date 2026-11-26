@@ -1177,3 +1177,27 @@ main.book-page {
     }
 
 }
+
+/* WEBSITE DEVELOPMENT NOTICE */
+
+.development-note {
+    background: #f0f3ed;
+    border-left: 4px solid #46665b;
+    border-radius: 4px;
+    padding: 22px 28px;
+    margin: 25px 0 35px;
+}
+
+.development-note h3 {
+    color: #243f4d;
+    font-family: Georgia, serif;
+    font-size: 1.25rem;
+    margin: 0 0 12px;
+}
+
+.development-note p {
+    color: #46665b;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin: 0;
+}

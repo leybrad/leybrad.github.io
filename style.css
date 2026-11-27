@@ -1261,7 +1261,6 @@ main.book-page {
 }
 
 .reading-text {
-    white-space: pre-line;
     font-size: 1.08rem;
     line-height: 1.78;
 }
@@ -1271,6 +1270,18 @@ main.book-page {
     margin: 3rem auto 0;
     padding-top: 1.5rem;
     border-top: 1px solid rgba(70, 102, 91, 0.3);
+}
+
+.reading-text p {
+    margin: 0 0 1em;
+}
+
+.reading-text h3 {
+    margin: 2em 0 0.75em;
+}
+
+.reading-text h3:first-child {
+    margin-top: 0;
 }
 
 @media (max-width: 640px) {

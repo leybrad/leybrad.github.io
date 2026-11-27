@@ -1240,11 +1240,20 @@ main.book-page {
 }
 
 .reading-article {
-    width: min(100%, 42rem);
+    box-sizing: border-box;
+    width: min(100%, 46rem);
     margin: 0 auto;
+    padding: clamp(1rem, 4vw, 2.5rem);
+    background: #f8f6ef;
+    color: #303532;
+    border: 1px solid #deded4;
+    border-radius: 0.75rem;
 }
 
-.reading-header {
+.reading-article .reading-header {
+    background: transparent;
+    color: #223d4b;
+    text-align: center;
     margin-bottom: 2.5rem;
     padding-bottom: 1.5rem;
     border-bottom: 1px solid rgba(70, 102, 91, 0.3);
@@ -1253,6 +1262,29 @@ main.book-page {
 .reading-header h2 {
     margin: 0.2rem 0 0.7rem;
     line-height: 1.15;
+    font-family: Georgia, serif;
+    font-size: clamp(1.8rem, 6vw, 3.75rem);
+}
+
+.reading-excerpt {
+    text-align: center;
+    font-style: italic;
+    color: #46665b;
+}
+
+.reading-afterword {
+    margin-top: 2rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid #deded4;
+}
+
+.reading-afterword h3 {
+    color: #223d4b;
+    margin-top: 0;
+}
+
+.reading-afterword a {
+    color: #36594e;
 }
 
 .reading-byline {
@@ -1295,4 +1327,6 @@ main.book-page {
         line-height: 1.7;
     }
 }
+
+
 

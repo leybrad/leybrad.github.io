@@ -1201,3 +1201,87 @@ main.book-page {
     line-height: 1.7;
     margin: 0;
 }
+/* Reading pages and featured reading cards */
+.featured-reading-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-reading-card .library-button-outline {
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.featured-label {
+    margin: 0 0 0.55rem;
+    color: #46665b;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+
+.reading-page {
+    width: min(100% - 2rem, 52rem);
+    margin: 0 auto;
+    padding: 2.5rem 0 4rem;
+}
+
+.reading-breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+}
+
+.reading-breadcrumb a {
+    color: #46665b;
+}
+
+.reading-article {
+    width: min(100%, 42rem);
+    margin: 0 auto;
+}
+
+.reading-header {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(70, 102, 91, 0.3);
+}
+
+.reading-header h2 {
+    margin: 0.2rem 0 0.7rem;
+    line-height: 1.15;
+}
+
+.reading-byline {
+    margin: 0;
+    font-style: italic;
+}
+
+.reading-text {
+    white-space: pre-line;
+    font-size: 1.08rem;
+    line-height: 1.78;
+}
+
+.reading-footer-nav {
+    width: min(100%, 42rem);
+    margin: 3rem auto 0;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(70, 102, 91, 0.3);
+}
+
+@media (max-width: 640px) {
+    .reading-page {
+        width: min(100% - 1.25rem, 52rem);
+        padding-top: 1.5rem;
+    }
+
+    .reading-text {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+}
+
